@@ -93,3 +93,38 @@ body {
     width: 17px;
     height: 17px;
 }
+
+@media  screen and (min-width: 1440px) {
+    .card {
+        height: 300px;
+        width: 750px;
+        display: flex;
+    }
+
+    .card__image {
+        height: 300px;
+        width: 650px;
+    }
+    .card__image img {
+        height: 300px;
+        width: auto;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .card__info {
+        padding: 40px 40px 40px 40px;
+    }
+
+    .card__info--title {
+        font-size: 1.3rem;
+    }
+
+    .card__info--resume {
+        font-size: 1.4rem;
+    }
+
+    .card__info--profile #author {
+        padding-right: 200px;
+    }
+}
