@@ -95,13 +95,15 @@ body {
 }
 
 #share-mobile {
-    /* height: 60px; */
+    height: 60px;
+    display: flex;
+    padding: 0 35px;
     background-color: hsl(217, 19%, 35%);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-#share-mobile:nth-child(1) {
-    color: red;
+#share-mobile {
+
 }
 
 @media  screen and (min-width: 1440px) {
