@@ -59,6 +59,7 @@ body {
 
 .card__info--profile {
     display: flex;
+    /* display: none; */
     align-items: center;
     justify-content: space-between;
 }
@@ -90,20 +91,49 @@ body {
     border-radius: 50%;
 }
 .card__info--profile #share img {
-    width: 17px;
-    height: 17px;
+    width: 15px;
+    height: 15px;
 }
 
 #share-mobile {
-    height: 60px;
+    height: 70px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 0 35px;
     background-color: hsl(217, 19%, 35%);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-#share-mobile {
-
+#share-mobile div{
+    color: hsl(212, 23%, 69%);
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: .7rem;
+}
+#share-mobile figure {
+    display: flex;
+    gap: 15px;
+}
+#share-mobile button {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    border-radius: 50%;
+    background-color: hsl(214, 17%, 51%);
+    
+}
+#share-mobile button img {
+    width: 15px;
+    height: 15px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(320deg) brightness(106%) contrast(602%);
+}
+#share-mobile figure:hover,
+#share-mobile button:hover {
+    cursor: pointer;
 }
 
 @media  screen and (min-width: 1440px) {
