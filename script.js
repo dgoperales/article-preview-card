@@ -1,13 +1,18 @@
-const profileInfo = document.querySelector('.card__info--profile');
-const shareButton = document.querySelector('#share');
-const shareMobile = document.querySelector('#share-mobile');
+const profileInfo = document.getElementsByClassName("card__info--profile");
+const shareButton = document.getElementById("share");
+const shareMobileOptions = document.getElementById("share-mobile");
+const backToProfileInfo = document.getElementById("back-button");
 
-shareButton.addEventListener('click', toggleShareMobile);
+shareMobileOptions.style.display = "none";
 
-function toggleShareMobile() {
-    const isProfileViewOpen = profileInfo.classList.contains('inactive');
-
-    if(isProfileViewOpen) {
-        profileInfo.classList.remove('inactive');
-    }
+function showShareMobileOptions() {
+    shareMobileOptions.style.display = 'flex';
+    profileInfo[0].style.display = 'none';
 }
+
+function hideProfileInfo() {
+    shareButton.style.display = 'none';
+}
+
+//backToProfileInfo.addEventListener("click", hideShareMobileOptions);
+shareButton.addEventListener("click", showShareMobileOptions);

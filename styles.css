@@ -63,10 +63,6 @@ body {
     justify-content: space-between;
 }
 
-.inactive {
-    display: none;
-}
-
 .card__info--profile img {
     width: 45px;
     height: 45px;
@@ -99,10 +95,13 @@ body {
     height: 15px;
 }
 
+#share {
+    border-style: none;
+}
+
 #share-mobile {
     height: 70px;
     display: flex;
-    display: none;
     justify-content: space-between;
     align-items: center;
     padding: 0 35px;
@@ -136,8 +135,9 @@ body {
     height: 15px;
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(320deg) brightness(106%) contrast(602%);
 }
+
 #share-mobile figure:hover,
-#share-mobile button:hover {
+button:hover {
     cursor: pointer;
 }
 
