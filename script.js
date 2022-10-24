@@ -10,9 +10,10 @@ function showShareMobileOptions() {
     profileInfo[0].style.display = 'none';
 }
 
-function hideProfileInfo() {
-    shareButton.style.display = 'none';
+function showProfileInfo() {
+    profileInfo[0].style.display = 'flex';
+    shareMobileOptions.style.display = 'none';
 }
 
-//backToProfileInfo.addEventListener("click", hideShareMobileOptions);
+backToProfileInfo.addEventListener("click", showProfileInfo);
 shareButton.addEventListener("click", showShareMobileOptions);
