@@ -15,5 +15,10 @@ function showProfileInfo() {
     shareMobileOptions.style.display = 'none';
 }
 
+if (window.matchMedia('(min-width: 1440px)').matches) {
+     console.log('yes');
+     profileInfo[0].style.display = 'flex';
+ }
+
 backToProfileInfo.addEventListener("click", showProfileInfo);
 shareButton.addEventListener("click", showShareMobileOptions);
